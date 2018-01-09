@@ -1,0 +1,39 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: package
+    run_list:
+      - recipe[django::package]
+    verifier:
+      inspec_tests:
+        - test/smoke/default/package_test.rb
+    attributes:
+  - name: pip
+    run_list:
+      - recipe[django::pip]
+    verifier:
+      inspec_tests:
+        - test/smoke/default/pip_test.rb
+    attributes:
+  - name: virtualenv
+    run_list:
+      - recipe[django::virtualenv]
+    verifier:
+      inspec_tests:
+        - test/smoke/default/virtualenv_test.rb
+    attributes:
