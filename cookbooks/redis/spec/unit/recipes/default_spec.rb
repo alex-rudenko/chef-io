@@ -27,12 +27,19 @@ describe 'redis::default' do
       expect(chef_run).to create_remote_file('/tmp/redis-2.8.9.tar.gz')
     end
     it 'unzips the application' do
-      #expect(chef_run).to nothing_execute('tar xvf redis-2.8.9.tar.gz')
       resource = chef_run.remote_file('/tmp/redis-2.8.9.tar.gz')
       expect(resource).to notify('execute[tar xzf redis-2.8.9.tar.gz]').to(:run).immediately
     end
-    it 'builds it'
-    it 'installs the server'
-    it 'starts the service'
+    it 'builds it' do
+      resource = chef_run.execute('tar xzf redis-2.8.9.tar.gz')
+      expect(resource).to notify('execute[make && make install]').to(:run).immediately
+    end
+    it 'installs the server' do
+      resource = chef_run.execute('make && make install')
+      expect(resource).to notify('execute[echo -n | ./install_server.sh]').to(:run).immediately
+    end
+    it 'starts the service' do
+      expect(chef_run).to start_service('redis_6379')
+    end
   end
 end
