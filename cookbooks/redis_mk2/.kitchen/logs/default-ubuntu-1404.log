@@ -1,0 +1,77 @@
+I, [2018-01-12T11:01:22.488402 #6680]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2018-01-12T11:01:22.488911 #6680]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2018-01-12T11:01:22.489005 #6680]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2018-01-12T11:01:22.489491 #6680]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 6.3.1...
+I, [2018-01-12T11:01:22.536382 #6680]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2018-01-12T11:01:22.537472 #6680]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2018-01-12T11:01:22.538457 #6680]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2018-01-12T11:01:22.883021 #6680]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2018-01-12T11:01:22.883304 #6680]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2018-01-12T11:01:22.883586 #6680]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2018-01-12T11:01:23.060832 #6680]  INFO -- default-ubuntu-1404: Download complete.
+I, [2018-01-12T11:01:23.095420 #6680]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2018-01-12T11:01:23.095914 #6680]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2018-01-12T11:01:23.096278 #6680]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2018-01-12T11:01:23.096552 #6680]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1572/metadata.txt
+I, [2018-01-12T11:01:23.097294 #6680]  INFO -- default-ubuntu-1404: trying wget...
+I, [2018-01-12T11:01:23.251445 #6680]  INFO -- default-ubuntu-1404: sha1	968d6f567dc45ab4cd8d8f94a5e43d781a1d5ba1
+I, [2018-01-12T11:01:23.256833 #6680]  INFO -- default-ubuntu-1404: sha256	c523feb2494b407d71c56261035a58b6897ec6312f917477ef0b3fc4e27c072d
+I, [2018-01-12T11:01:23.257093 #6680]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/13.6.4/ubuntu/14.04/chef_13.6.4-1_amd64.deb
+I, [2018-01-12T11:01:23.257235 #6680]  INFO -- default-ubuntu-1404: version	13.6.4
+I, [2018-01-12T11:01:23.267295 #6680]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2018-01-12T11:01:23.283151 #6680]  INFO -- default-ubuntu-1404: /tmp/omnibus/cache/chef_13.6.4-1_amd64.deb exists
+I, [2018-01-12T11:01:23.283507 #6680]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2018-01-12T11:01:23.732836 #6680]  INFO -- default-ubuntu-1404: 
+I, [2018-01-12T11:01:23.733086 #6680]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-01-12T11:01:23.733215 #6680]  INFO -- default-ubuntu-1404: 
+I, [2018-01-12T11:01:23.733379 #6680]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2018-01-12T11:01:23.733540 #6680]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2018-01-12T11:01:23.733708 #6680]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2018-01-12T11:01:23.733856 #6680]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2018-01-12T11:01:23.734022 #6680]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2018-01-12T11:01:23.734125 #6680]  INFO -- default-ubuntu-1404: 
+I, [2018-01-12T11:01:23.734279 #6680]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-01-12T11:01:23.734388 #6680]  INFO -- default-ubuntu-1404: 
+I, [2018-01-12T11:01:23.734569 #6680]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2018-01-12T11:01:23.734779 #6680]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2018-01-12T11:01:23.808683 #6680]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2018-01-12T11:01:23.958209 #6680]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33563 files and directories currently installed.)
+I, [2018-01-12T11:01:23.959627 #6680]  INFO -- default-ubuntu-1404: Preparing to unpack .../cache/chef_13.6.4-1_amd64.deb ...
+I, [2018-01-12T11:01:23.967542 #6680]  INFO -- default-ubuntu-1404: Unpacking chef (13.6.4-1) ...
+I, [2018-01-12T11:01:33.388482 #6680]  INFO -- default-ubuntu-1404: Setting up chef (13.6.4-1) ...
+I, [2018-01-12T11:01:33.476428 #6680]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2018-01-12T11:01:33.567321 #6680]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2018-01-12T11:01:34.787542 #6680]  INFO -- default-ubuntu-1404: Starting Chef Client, version 13.6.4
+I, [2018-01-12T11:01:36.260742 #6680]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2018-01-12T11:01:36.468962 #6680]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["redis::default"]
+I, [2018-01-12T11:01:36.486482 #6680]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2018-01-12T11:01:36.490906 #6680]  INFO -- default-ubuntu-1404:   - redis (0.1.0)
+I, [2018-01-12T11:01:36.491393 #6680]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2018-01-12T11:01:36.492810 #6680]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2018-01-12T11:01:36.500959 #6680]  INFO -- default-ubuntu-1404: Converging 8 resources
+I, [2018-01-12T11:01:36.501825 #6680]  INFO -- default-ubuntu-1404: Recipe: redis::default
+I, [2018-01-12T11:01:47.886443 #6680]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action run
+I, [2018-01-12T11:01:47.886574 #6680]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2018-01-12T11:02:17.131285 #6680]  INFO -- default-ubuntu-1404:   * apt_package[build-essential] action install
+I, [2018-01-12T11:02:17.131361 #6680]  INFO -- default-ubuntu-1404:     - install version 11.6ubuntu6 of package build-essential
+I, [2018-01-12T11:02:19.921052 #6680]  INFO -- default-ubuntu-1404:   * apt_package[tcl8.5] action install
+I, [2018-01-12T11:02:19.921120 #6680]  INFO -- default-ubuntu-1404:     - install version 8.5.15-2ubuntu1 of package tcl8.5
+I, [2018-01-12T11:02:20.775908 #6680]  INFO -- default-ubuntu-1404:   * remote_file[/tmp/redis-2.8.9.tar.gz] action create
+I, [2018-01-12T11:02:20.791536 #6680]  INFO -- default-ubuntu-1404:     - create new file /tmp/redis-2.8.9.tar.gz
+I, [2018-01-12T11:02:20.792074 #6680]  INFO -- default-ubuntu-1404:     - update content in file /tmp/redis-2.8.9.tar.gz from none to 7834c3
+I, [2018-01-12T11:02:20.793691 #6680]  INFO -- default-ubuntu-1404:     (new content is binary, diff output suppressed)
+I, [2018-01-12T11:02:20.869250 #6680]  INFO -- default-ubuntu-1404:   * execute[tar xzf redis-2.8.9.tar.gz] action run
+I, [2018-01-12T11:02:20.869319 #6680]  INFO -- default-ubuntu-1404:     - execute tar xzf redis-2.8.9.tar.gz
+I, [2018-01-12T11:02:53.795910 #6680]  INFO -- default-ubuntu-1404:   * execute[make && make install] action run
+I, [2018-01-12T11:02:53.795987 #6680]  INFO -- default-ubuntu-1404:     - execute make && make install
+I, [2018-01-12T11:02:53.856663 #6680]  INFO -- default-ubuntu-1404:   * execute[echo -n | ./install_server.sh] action run
+I, [2018-01-12T11:02:53.856731 #6680]  INFO -- default-ubuntu-1404:     - execute echo -n | ./install_server.sh
+I, [2018-01-12T11:02:53.856751 #6680]  INFO -- default-ubuntu-1404:   * execute[tar xzf redis-2.8.9.tar.gz] action nothing (skipped due to action :nothing)
+I, [2018-01-12T11:02:53.856778 #6680]  INFO -- default-ubuntu-1404:   * execute[make && make install] action nothing (skipped due to action :nothing)
+I, [2018-01-12T11:02:53.856800 #6680]  INFO -- default-ubuntu-1404:   * execute[echo -n | ./install_server.sh] action nothing (skipped due to action :nothing)
+I, [2018-01-12T11:02:53.896343 #6680]  INFO -- default-ubuntu-1404:   * service[redis_6379] action start (up to date)
+I, [2018-01-12T11:02:53.992082 #6680]  INFO -- default-ubuntu-1404: 
+I, [2018-01-12T11:02:53.992534 #6680]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2018-01-12T11:02:53.993051 #6680]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2018-01-12T11:02:53.993832 #6680]  INFO -- default-ubuntu-1404: Chef Client finished, 7/11 resources updated in 01 minutes 19 seconds
+I, [2018-01-12T11:02:54.019131 #6680]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m31.53s).
